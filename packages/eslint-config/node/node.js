@@ -10,7 +10,13 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
-  rules: {},
+  rules: {
+    "no-useless-constructor": "off",
+    "func-call-spacing": "off",
+    "@typescript-eslint/func-call-spacing": "off",
+    "space-before-function-paren": "off",
+    "@typescript-eslint/space-before-function-paren": "off"
+  },
   settings: {
     'import/parsers': {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
